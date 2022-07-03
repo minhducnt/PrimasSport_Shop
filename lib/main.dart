@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:primas_sport/src/ui/homepage/lib_hmpage.dart';
+import '../src/ui/homepage/lib_hmpage.dart';
 
 import '../src/data/ultis/constants.dart';
 

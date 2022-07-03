@@ -11,8 +11,8 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {},
           icon: SvgPicture.asset(
             "assets/icons/menu.svg",
-            width: 20,
-            height: 20,
+            width: 15,
+            height: 15,
           ),
         ),
         title: Row(
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: SvgPicture.asset("assets/icons/Notification.svg"),
+            icon: SvgPicture.asset("assets/icons/notification.svg"),
             onPressed: () {},
           ),
         ],
