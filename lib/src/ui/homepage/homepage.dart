@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               width: 50,
               height: 50,
             ),
-            const SizedBox(width: defaultPadding / 2),
+            const SizedBox(width: Margin.defaultPadding / 2),
           ],
         ),
         actions: [
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(
             parent: AlwaysScrollableScrollPhysics()),
-        padding: const EdgeInsets.all(defaultPadding),
+        padding: const EdgeInsets.all(Margin.defaultPadding),
 
         /// A widget that displays its children in a vertical array.
         child: Column(
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(vertical: defaultPadding),
+              padding: EdgeInsets.symmetric(vertical: Margin.defaultPadding),
               child: SearchForm(),
             ),
             const Categories(),

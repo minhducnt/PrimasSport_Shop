@@ -18,7 +18,7 @@ class Categories extends StatelessWidget {
           press: () {},
         ),
         separatorBuilder: (context, index) =>
-            const SizedBox(width: defaultPadding),
+            const SizedBox(width: Margin.defaultPadding),
       ),
     );
   }
@@ -41,16 +41,18 @@ class CategoryCard extends StatelessWidget {
       onPressed: press,
       style: OutlinedButton.styleFrom(
         shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
+          borderRadius:
+              BorderRadius.all(Radius.circular(Margin.defaultBorderRadius)),
         ),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            vertical: defaultPadding / 2, horizontal: defaultPadding / 4),
+            vertical: Margin.defaultPadding / 2,
+            horizontal: Margin.defaultPadding / 4),
         child: Column(
           children: [
             SvgPicture.asset(icon),
-            const SizedBox(height: defaultPadding / 2),
+            const SizedBox(height: Margin.defaultPadding / 2),
             Text(
               title,
               style: Theme.of(context).textTheme.subtitle2,

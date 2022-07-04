@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587790699517",
+    "project_id": "primas-sport",
+    "storage_bucket": "primas-sport.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587790699517:android:c09aef042c6c8fcba36794",
+        "android_client_info": {
+          "package_name": "com.example.primas_sport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587790699517-9p0r284l1tetq46bdegk3lv7jiqh2ed4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL3GxBDqAEgf0barXsfEioweShPSDz-rg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587790699517-9p0r284l1tetq46bdegk3lv7jiqh2ed4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

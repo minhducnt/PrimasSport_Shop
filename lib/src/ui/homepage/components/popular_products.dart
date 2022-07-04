@@ -10,7 +10,7 @@ class PopularProducts extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+          padding: const EdgeInsets.symmetric(vertical: Margin.defaultPadding),
           child: SectionTitle(
             title: "Popular",
             pressSeeAll: () {},
@@ -24,7 +24,7 @@ class PopularProducts extends StatelessWidget {
             children: List.generate(
               products.length,
               (index) => Padding(
-                padding: const EdgeInsets.only(right: defaultPadding),
+                padding: const EdgeInsets.only(right: Margin.defaultPadding),
                 child: ProductCard(
                   title: products[index].title,
                   image: products[index].image,

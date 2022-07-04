@@ -20,10 +20,11 @@ class ProductCard extends StatelessWidget {
       onTap: press,
       child: Container(
         width: 154,
-        padding: const EdgeInsets.all(defaultPadding / 2),
+        padding: const EdgeInsets.all(Margin.defaultPadding / 2),
         decoration: const BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
+          borderRadius:
+              BorderRadius.all(Radius.circular(Margin.defaultBorderRadius)),
         ),
         child: Column(
           children: [
@@ -32,14 +33,14 @@ class ProductCard extends StatelessWidget {
               decoration: BoxDecoration(
                 color: bgColor,
                 borderRadius: const BorderRadius.all(
-                    Radius.circular(defaultBorderRadius)),
+                    Radius.circular(Margin.defaultBorderRadius)),
               ),
               child: Image.asset(
                 image,
                 height: 132,
               ),
             ),
-            const SizedBox(height: defaultPadding / 2),
+            const SizedBox(height: Margin.defaultPadding / 2),
             Row(
               children: [
                 Expanded(
@@ -48,7 +49,7 @@ class ProductCard extends StatelessWidget {
                     style: const TextStyle(color: Colors.black),
                   ),
                 ),
-                const SizedBox(width: defaultPadding / 4),
+                const SizedBox(width: Margin.defaultPadding / 4),
                 Text(
                   "\$$price",
                   style: Theme.of(context).textTheme.subtitle2,

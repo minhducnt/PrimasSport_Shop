@@ -29,13 +29,14 @@ class SearchForm extends StatelessWidget {
           ),
           suffixIcon: Padding(
             padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding, vertical: defaultPadding / 2),
+                horizontal: Margin.defaultPadding,
+                vertical: Margin.defaultPadding / 2),
             child: SizedBox(
               width: 48,
               height: 48,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: kPrimaryColor,
+                  primary: AppColors.kPrimaryColor,
                   shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(12)),
                   ),

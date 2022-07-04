@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import '../src/ui/homepage/lib_hmpage.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../src/data/ultis/constants.dart';
+import '../src/data/ultis/ultis.dart';
+import '../src/ui/onboarding/onboarding.dart';
 
-void main() {
-  runApp(const Main());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const ProviderScope(child: Main()));
 }
 
 class Main extends StatelessWidget {
@@ -12,22 +17,20 @@ class Main extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Primas Sports',
-      theme: ThemeData(
-        scaffoldBackgroundColor: kBgColor,
-        primarySwatch: Colors.blue,
-        fontFamily: "Gordita",
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-        ),
-        textTheme: const TextTheme(
-          bodyText2: TextStyle(color: Colors.black54),
-        ),
+    return ScreenUtilInit(
+      designSize: const Size(480, 810),
+      builder: (context, child) => MaterialApp(
+        title: "Primas Sport",
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            fontFamily: 'Quicksand',
+            scaffoldBackgroundColor: AppColors.kScaffoldColor,
+            primaryColor: AppColors.kPrimaryColor,
+            colorScheme: const ColorScheme.light().copyWith(
+                primary: AppColors.kPrimaryColor,
+                secondary: AppColors.kSecondaryColor)),
+        home: const Onboarding(),
       ),
-      home: const HomeScreen(),
     );
   }
 }

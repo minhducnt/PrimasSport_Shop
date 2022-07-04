@@ -31,16 +31,19 @@ class DetailsScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.4,
             fit: BoxFit.cover,
           ),
-          const SizedBox(height: defaultPadding * 1.5),
+          const SizedBox(height: Margin.defaultPadding * 1.5),
           Expanded(
             child: Container(
-              padding: const EdgeInsets.fromLTRB(defaultPadding,
-                  defaultPadding * 2, defaultPadding, defaultPadding),
+              padding: const EdgeInsets.fromLTRB(
+                  Margin.defaultPadding,
+                  Margin.defaultPadding * 2,
+                  Margin.defaultPadding,
+                  Margin.defaultPadding),
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(defaultBorderRadius * 3),
-                  topRight: Radius.circular(defaultBorderRadius * 3),
+                  topLeft: Radius.circular(Margin.defaultBorderRadius * 3),
+                  topRight: Radius.circular(Margin.defaultBorderRadius * 3),
                 ),
               ),
               child: Column(
@@ -54,7 +57,7 @@ class DetailsScreen extends StatelessWidget {
                           style: Theme.of(context).textTheme.headline6,
                         ),
                       ),
-                      const SizedBox(width: defaultPadding),
+                      const SizedBox(width: Margin.defaultPadding),
                       Text(
                         "\$${product.price}",
                         style: Theme.of(context).textTheme.headline6,
@@ -62,7 +65,8 @@ class DetailsScreen extends StatelessWidget {
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.symmetric(vertical: defaultPadding),
+                    padding:
+                        EdgeInsets.symmetric(vertical: Margin.defaultPadding),
                     child: Text(
                       "A Henley shirt is a collarless pullover shirt, by a round neckline and a placket about 3 to 5 inches (8 to 13 cm) long and usually having 2–5 buttons.",
                     ),
@@ -71,7 +75,7 @@ class DetailsScreen extends StatelessWidget {
                     "Colors",
                     style: Theme.of(context).textTheme.subtitle2,
                   ),
-                  const SizedBox(height: defaultPadding / 2),
+                  const SizedBox(height: Margin.defaultPadding / 2),
                   Row(
                     children: const [
                       ColorDot(
@@ -88,7 +92,7 @@ class DetailsScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: defaultPadding * 2),
+                  const SizedBox(height: Margin.defaultPadding * 2),
                   Center(
                     child: SizedBox(
                       width: 200,
@@ -96,7 +100,7 @@ class DetailsScreen extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            primary: kPrimaryColor,
+                            primary: AppColors.kPrimaryColor,
                             shape: const StadiumBorder()),
                         child: const Text("Add to Cart"),
                       ),
