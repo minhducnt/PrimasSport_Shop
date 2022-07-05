@@ -18,14 +18,18 @@ class SearchForm extends StatelessWidget {
         decoration: InputDecoration(
           filled: true,
           fillColor: Colors.white,
-          hintText: "Search...",
+          hintText: "Tìm kiếm...",
           border: outlineInputBorder,
           enabledBorder: outlineInputBorder,
           focusedBorder: outlineInputBorder,
           errorBorder: outlineInputBorder,
-          prefixIcon: Padding(
-            padding: const EdgeInsets.all(14),
-            child: SvgPicture.asset("assets/icons/Search.svg"),
+          prefixIcon: const Padding(
+            padding: EdgeInsets.all(14),
+            child: Icon(
+              LineIcons.search,
+              size: 30,
+              color: AppColors.kSecondaryColor,
+            ),
           ),
           suffixIcon: Padding(
             padding: const EdgeInsets.symmetric(

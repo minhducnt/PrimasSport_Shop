@@ -12,7 +12,7 @@ class NewArrivalProducts extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: Margin.defaultPadding),
           child: SectionTitle(
-            title: "New Arrival",
+            title: "Hàng mới về",
             pressSeeAll: () {},
           ),
         ),

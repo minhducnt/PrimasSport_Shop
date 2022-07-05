@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "pac_man" "\0"
+            VALUE "FileDescription", "primas_sport" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pac_man" "\0"
+            VALUE "InternalName", "primas_sport" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pac_man.exe" "\0"
-            VALUE "ProductName", "pac_man" "\0"
+            VALUE "OriginalFilename", "primas_sport.exe" "\0"
+            VALUE "ProductName", "primas_sport" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

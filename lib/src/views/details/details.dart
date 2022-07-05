@@ -1,12 +1,11 @@
 part of lib_detail;
 
-class DetailsScreen extends StatelessWidget {
+class DetailsScreen extends ConsumerWidget {
   const DetailsScreen({Key? key, required this.product}) : super(key: key);
-
   final Product product;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       backgroundColor: product.bgColor,
       appBar: AppBar(

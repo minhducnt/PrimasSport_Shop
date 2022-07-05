@@ -46,7 +46,7 @@ class _OnboardingState extends ConsumerState<Onboarding> {
                           ),
                         ),
                         onPressed: () =>
-                            navigator(context, const SignUpScreen())),
+                            navigator(context, const LoginScreen())),
                   ),
                 ),
                 const Spacer(),

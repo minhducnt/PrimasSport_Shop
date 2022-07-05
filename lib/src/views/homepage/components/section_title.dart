@@ -6,8 +6,9 @@ class SectionTitle extends StatelessWidget {
     required this.title,
     required this.pressSeeAll,
   }) : super(key: key);
+
   final String title;
-  final VoidCallback pressSeeAll;
+  final GestureTapCallback pressSeeAll;
 
   @override
   Widget build(BuildContext context) {
@@ -16,18 +17,18 @@ class SectionTitle extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                color: Colors.black,
-                fontWeight: FontWeight.w500,
-              ),
-        ),
-        TextButton(
-          onPressed: pressSeeAll,
-          child: const Text(
-            "See All",
-            style: TextStyle(color: Colors.black54),
+          style: TextStyle(
+            fontSize: getProportionateScreenWidth(18),
+            color: Colors.black,
           ),
-        )
+        ),
+        GestureDetector(
+          onTap: pressSeeAll,
+          child: const Text(
+            "Xem thêm",
+            style: TextStyle(color: Color(0xFFBBBBBB)),
+          ),
+        ),
       ],
     );
   }

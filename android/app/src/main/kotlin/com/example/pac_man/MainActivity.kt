@@ -1,4 +1,4 @@
-package com.example.pac_man
+package com.example.primas_sport
 
 import io.flutter.embedding.android.FlutterActivity
 
