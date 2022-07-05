@@ -19,3 +19,4 @@ part 'components/product_card.dart';
 part 'components/search_form.dart';
 part 'components/section_title.dart';
 part 'components/special_offers.dart';
+part 'components/discount_banner.dart';

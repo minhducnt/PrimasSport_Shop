@@ -21,7 +21,6 @@ class _BottomNavigationState extends ConsumerState<BottomNavigation> {
 
   List<Widget> screens = const [
     HomeScreen(),
-    ExploreScreen(),
     OrdersScreen(),
     ProfileScreen(),
   ];
@@ -41,13 +40,6 @@ class _BottomNavigationState extends ConsumerState<BottomNavigation> {
             title: const Text('Trang chủ'),
             inactiveColor: Theme.of(context).colorScheme.secondary,
             textAlign: TextAlign.center,
-          ),
-          BottomNavyBarItem(
-            icon: const Icon(LineIcons.search),
-            activeColor: Theme.of(context).primaryColor,
-            title: const Text('Lướt'),
-            textAlign: TextAlign.center,
-            inactiveColor: Theme.of(context).colorScheme.secondary,
           ),
           BottomNavyBarItem(
             icon: const Icon(LineIcons.shoppingBag),

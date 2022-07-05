@@ -28,6 +28,7 @@ List<Product> products = [
     image: "assets/images/product_1.png",
     title: "Casual Henley Shirts",
     price: 99000,
+    bgColor: const Color(0xFFFEFBF9),
   ),
   Product(
     id: 3,

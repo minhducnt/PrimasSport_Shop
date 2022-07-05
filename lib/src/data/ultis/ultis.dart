@@ -9,3 +9,4 @@ part 'constants.dart';
 part 'onboarding.dart';
 part 'size_config.dart';
 part 'theme.dart';
+part 'enums.dart';

@@ -64,17 +64,18 @@ class HomeScreen extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const DiscountBanner(),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: Margin.defaultPadding),
               child: SearchForm(),
             ),
             SizedBox(height: getProportionateScreenHeight(12)),
             const Categories(),
-            SizedBox(height: getProportionateScreenHeight(25)),
+            SizedBox(height: getProportionateScreenHeight(20)),
             const SpecialOffers(),
-            SizedBox(height: getProportionateScreenHeight(25)),
+            SizedBox(height: getProportionateScreenHeight(20)),
             const NewArrivalProducts(),
-            SizedBox(height: getProportionateScreenHeight(25)),
+            SizedBox(height: getProportionateScreenHeight(20)),
             const PopularProducts(),
           ],
         ),
