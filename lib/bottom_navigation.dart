@@ -6,7 +6,6 @@ import 'package:line_icons/line_icons.dart';
 import '../src/views/homepage/lib_hmpage.dart';
 import '../src/views/profile/lib_profile.dart';
 import '../src/views/orders/lib_orders.dart';
-import '../src/views/explore/lib_explore.dart';
 
 class BottomNavigation extends ConsumerStatefulWidget {
   const BottomNavigation({Key? key}) : super(key: key);
